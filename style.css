@@ -1,0 +1,190 @@
+/* Custom Fonts  */
+@font-face{
+    src:url('./fonts/Lato-Regular.ttf');
+    font-family: lato;
+}   
+
+@font-face{
+    
+    src:url('./fonts/Ubuntu-Regular.ttf');
+    font-family: dalton;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.accent{
+    color:#2eb82e;
+}
+
+body{
+    font-family: lato,dalton;
+    background-color: #f2f2f2;
+}
+
+.navBar{
+    background: #E5E5E5;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.navList{
+    float: right;
+    margin-right: 20px;
+}
+
+.navItem{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navLink{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    color: #2eb82e;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.home{
+    padding: 50px 40px 0px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content{
+    font-size: 25px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 3%;
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.homeImage{
+    height:750px;
+}
+
+.hacktoberImage{
+    height:300px;
+}
+
+
+@media (max-width: 952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .navLink{
+        font-size: 16px;
+    }
+    .home{
+        padding: 50px 40px 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .homeImage{
+        height:360px;
+    }
+    .hacktoberImage{
+        height:200px;
+    } */
+ }
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .navList{
+        position: fixed;
+        /* font-size: 25px; */
+        width: 100%;
+        background:  #E5E5E7;
+        top: 80px;
+        left: -100%; 
+        text-align: center;
+        transition: all .5s;
+    }
+    .navItem{
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    .navLink{
+        font-size: 17px;
+    }
+    a:hover{
+        color: #2eb82e;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .logo{
+        font-size: 25px;
+        padding: 0 30px;
+    }
+    .homeImage{
+        height:140px;
+    }
+    .hacktoberImage{
+        height:130px;
+    }
+    .header{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .card {
+        width: 250px;
+    }
+}
