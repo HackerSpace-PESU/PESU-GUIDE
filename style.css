@@ -22,6 +22,10 @@
     color:#2eb82e;
 }
 
+.hackerSpace{
+    color:#7330ed;
+}
+
 body{
     font-family: lato,dalton;
     background-color: #f2f2f2;
@@ -31,6 +35,7 @@ body{
     background: #E5E5E5;
     height: 80px;
     width: 100%;
+    margin-right: 0px;
 }
 
 .logo{
@@ -88,12 +93,12 @@ a.active,a:hover{
 }
 
 .header{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .content{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .card {
@@ -110,13 +115,37 @@ a.active,a:hover{
 }
 
 .homeImage{
-    height:750px;
+    height:500px;
 }
 
 .hacktoberImage{
-    height:300px;
+    height:150px;
 }
 
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around; 
+    padding: 30px;
+}
+
+.pesLogo{
+    height: 30px;
+}
+
+.footerIcon{
+    font-size: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: right;
+    justify-content: right;
+}
+
+.footherSpace{
+    width:1400px;
+}
 
 @media (max-width: 952px){
     .logo{
@@ -132,12 +161,12 @@ a.active,a:hover{
         flex-direction: column;
         justify-content: center;
     }
-    /* .homeImage{
+    .homeImage{
         height:360px;
     }
     .hacktoberImage{
         height:200px;
-    } */
+    }
  }
 @media (max-width: 858px){
     .checkbtn{
@@ -145,7 +174,6 @@ a.active,a:hover{
     }
     .navList{
         position: fixed;
-        /* font-size: 25px; */
         width: 100%;
         background:  #E5E5E7;
         top: 80px;
@@ -164,6 +192,9 @@ a.active,a:hover{
     a:hover{
         color: #2eb82e;
     }
+    .home{
+        padding: 0px 0px 0px 0px;
+    }
     #check:checked ~ ul{
         left: 0;
     }
@@ -172,10 +203,10 @@ a.active,a:hover{
         padding: 0 30px;
     }
     .homeImage{
-        height:140px;
+        height:170px;
     }
     .hacktoberImage{
-        height:130px;
+        height:150px;
     }
     .header{
         font-size: 25px;
@@ -185,6 +216,20 @@ a.active,a:hover{
         font-size: 15px;
     }
     .card {
-        width: 250px;
+        width: auto;
+    }
+    .pesLogo{
+        height: 18px;
+    }
+    .footerIcon{
+        font-size: 20px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .footherSpace{
+        width:0px;
+    }
+    .footer{ 
+        padding: 30px 0px 30px 0px;
     }
 }
