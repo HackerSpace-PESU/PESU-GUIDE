@@ -66,7 +66,7 @@ body{
     text-transform: uppercase;
 }
 
-a.active,a:hover{
+.navLink:hover{
     color: #2eb82e;
     transition: .5s;
 }
@@ -132,19 +132,20 @@ a.active,a:hover{
 }
 
 .pesLogo{
-    height: 30px;
+    height: 25px;
 }
 
 .footerIcon{
-    font-size: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
     float: right;
     justify-content: right;
 }
 
-.footherSpace{
-    width:1400px;
+.footerSpace{
+    width:1800px;
 }
 
 @media (max-width: 952px){
