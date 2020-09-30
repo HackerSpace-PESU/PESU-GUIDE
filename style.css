@@ -284,13 +284,7 @@ body{
         height: 100px;
     }
     .dscCard{
-        position: fixed;
-        width: 100%;
-        background:  #E5E5E7;
-        top: 80px;
-        left: -100%; 
-        text-align: center;
-        transition: all .5s;
+        display: none;
     }
     .collHeader{
         font-size: 15px;
