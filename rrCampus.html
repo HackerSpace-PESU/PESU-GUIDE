@@ -27,82 +27,110 @@
         </ul>
 
     </nav>
-
-    <!-- <div class="container">
-        <img src="images/rr1.jpg">
-        <div class="bottom-left">Bottodddddddddddddddm Left</div>
-    </div> -->
-
     <div class="rrBox">
 
         
         <!-- Details Card -->
         <!-- <div class="circle"></div> -->
         <div class="rrColl">
+            <div class="row">
+                <button  class="dscButton" onclick="changeDsc(
+                    'MRD Block',
+                    'images/mrd.jpg',
+                    'Silver Jubliee Building named after the founder of PES University Mr. M.R.Doreswamy')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">MRD Block</p>
+                            <br>
+                            <img class="imgColl" src="images/mrd.jpg">
+                        </center>
+                    </div>
+                </button>
+                <div style="width:15px"></div>
+                <button  class="dscButton" onclick="changeDsc(
+                    'B Block',
+                    'images/Bblock.jpg',
+                    'Also known as the engineering block houses all the B Tech departments along with club rooms and companies on the upper floors in addition to the famous 13th Floor.')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">B Block</p>
+                            <br>
+                            <img class="imgColl" src="images/Bblock.jpg">
+                        </center>
+                    </div>
+                </button>
+            </div>
+            <br>
+            <div class="row">
+                <button  class="dscButton" onclick="changeDsc(
+                    'MRD Block',
+                    'images/Fblock.jpg',
+                    'Add Your Thoughts and Contribute! #Hacktober')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">F Block</p>
+                            <br>   
+                            <img class="imgColl" src="images/Fblock.jpg">
+                        </center>
+                    </div>
+                </button>
+                <div style="width:15px"></div>
+                <button  class="dscButton" onclick="changeDsc(
+                    'G Block',
+                    'images/Gblock.jpg',
+                    'Add Your Thoughts and Contribute! #Hacktober')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">G Block</p>
+                            <br>
+                            <img class="imgColl" src="images/Gblock.jpg">
+                        </center>
+                    </div>
+                </button>
+            </div>
+            <br>
+            <div class="row">
+                <button  class="dscButton" onclick="changeDsc(
+                    'OAT - Open Air theatre',
+                    'images/oat.jpg',
+                    'Add Your Thoughts and Contribute! #Hacktober')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">OAT</p>
+                            <br>
+                            <img class="imgColl" src="images/oat.jpg">
+                        </center>
+                    </div>
+                </button>
+                <div style="width:15px"></div>
+                <button  class="dscButton" onclick="changeDsc(
+                    'PIr3',
+                    'images/pir3.jpg',
+                    'Add Your Thoughts and Contribute! #Hacktober')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">PIr3</p>
+                            <br>
+                            <img class="imgColl" src="images/pir3.jpg">
+                        </center>
+                    </div>
+                </button>
+            </div>
 
-            <div class="row">
-                <div class="card">
-                    <center>
-                        <p class="collHeader">MRD Block</p>
-                        <br>
-                        <img class="imgColl" src="images/mrd.jpg">
-                    </center>
-                </div>
-                <div style="width:15px"></div>
-                <div class="card">
-                    <center>
-                        <p class="collHeader">B Block</p>
-                        <br>
-                        <img class="imgColl" src="images/Bblock.jpg">
-                    </center>
-                </div>
-            </div>
             <br>
             <div class="row">
-                <div class="card">
-                    <center>
-                        <p class="collHeader">F Block</p>
-                        <br>
-                        <img class="imgColl" src="images/Fblock.jpg">
-                    </center>
-                </div>
-                <div style="width:15px"></div>
-                <div class="card">
-                    <center>
-                        <p class="collHeader">G Block</p>
-                        <br>
-                        <img class="imgColl" src="images/Gblock.jpg">
-                    </center>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="card">
-                    <center>
-                        <p class="collHeader">OAT</p>
-                        <br>
-                        <img class="imgColl" src="images/oat.jpg">
-                    </center>
-                </div>
-                <div style="width:15px"></div>
-                <div class="card">
-                    <center>
-                        <p class="collHeader">PIr3</p>
-                        <br>
-                        <img class="imgColl" src="images/pir3.jpg">
-                    </center>
-                </div>
-            </div>
-
-            <br>
-            <div class="row">
-                <div class="card">
-                    <center>
-                        <p class="collHeader">Student Longue</p>
-                        <br>
-                        <img class="imgColl" src="images/studentLounge.jpg">
-                    </center>
-                </div>
+                <button  class="dscButton" onclick="changeDsc(
+                    'Student Longue',
+                    'images/studentLounge.jpg',
+                    'Add Your Thoughts and Contribute! #Hacktober')">
+                    <div class="card">
+                        <center>
+                            <p class="collHeader">Student Longue</p>
+                            <br>
+                            <img class="imgColl" src="images/studentLounge.jpg">
+                        </center>
+                    </div>
+                </button>
             </div>
 
 
@@ -111,11 +139,11 @@
 
         <div class="dscCard">
             <center>
-                <h1>Ring Road Campus</h1>
+                <h1 id="dscHeader">Ring Road Campus</h1>
                 <br>
-                <img src="images/rr.jpg" class="dscImage">
+                <img src="images/rr.jpg" class="dscImage" id="dscImage">
                 <br><br><br>
-                <p class="content">Address: 100 Feet Ring Road, Banashankari Stage III, Dwaraka Nagar, Banashankari, Bengaluru, Karnataka 560085</p>
+                <p class="content" id="dscText">Address: 100 Feet Ring Road, Banashankari Stage III, Dwaraka Nagar, Banashankari, Bengaluru, Karnataka 560085</p>
             </center>
         </div>
 
