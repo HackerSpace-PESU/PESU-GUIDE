@@ -181,7 +181,7 @@ body{
 }
 
 .dscMap{
-    height:350px;
+    height:400px;
 }
 
 .dscCard {
@@ -298,8 +298,7 @@ body{
     }
     .rrColl{
         padding: 10px 10px 10px 10px;
-        align-items: center;
-        
+        align-items: center;   
     }
     .imgColl{
         height:60px;
@@ -309,7 +308,7 @@ body{
         height: 120px;
     }
     .dscMap{
-        height:200px;
+        height:300px;
     }    
     #dscHeader{
         font-size: 20px;
@@ -348,5 +347,5 @@ body{
 }
 
 #mail:hover{
-    color:rgb(175, 8, 8);ss
+    color:rgb(175, 8, 8);
 }
