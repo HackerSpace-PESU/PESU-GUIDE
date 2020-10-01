@@ -180,6 +180,10 @@ body{
     height: 190px;
 }
 
+.dscMap{
+    height:350px;
+}
+
 .dscCard {
     padding: 10px;
     border-radius: 8% 0 0 8% ; 
@@ -304,6 +308,9 @@ body{
     .dscImage{
         height: 120px;
     }
+    .dscMap{
+        height:200px;
+    }    
     #dscHeader{
         font-size: 20px;
     }
