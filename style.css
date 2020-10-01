@@ -328,3 +328,18 @@ body{
         float: right;
     }
 }
+
+#github:hover{
+    color:rgb(53, 48, 48);
+    
+}
+#instagram:hover{
+    color:rgb(220, 20, 60);
+}
+#discord:hover{
+    color:rgb(65, 65, 196);
+}
+
+#mail:hover{
+    color:rgb(175, 8, 8);ss
+}
