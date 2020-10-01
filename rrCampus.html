@@ -1,186 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="icon" href="images/icon.png">
-    <title>RR Campus</title>
-</head>
-<body>
-    <nav class="navBar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="icon" href="images/icon.png">
+        <title>RR Campus</title>
+    </head>
+    <body>
+        <nav class="navBar">
 
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <a href="index.html">
-            <span class="logo">PESU <b class="accent">GUIDE</b></span>
-        </a>
-        
-        <ul class="navList">
-          <li class="navItem"><a href="rrCampus.html" class="navLink">RR Campus</a></li>
-          <li class="navItem"><a href="ecCampus.html" class="navLink">EC Campus</a></li>
-          <li class="navItem"><a href="gallery.html" class="navLink">Gallery</a></li>
-        </ul>
-
-    </nav>
-    <div class="rrBox">
-        <!-- Details Card -->
-        <!-- <div class="circle"></div> -->
-        <div class="rrColl">
-            <div class="row">
-                <button  class="dscButton" onclick="changeDsc(
-                    'MRD Block',
-                    'images/mrd.jpg',
-                    'Silver Jubliee Building named after the founder of PES University Mr. M.R.Doreswamy')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">MRD Block</p>
-                            <br>
-                            <img class="imgColl" src="images/mrd.jpg">
-                        </center>
-                    </div>
-                </button>
-                <div style="width:15px"></div>
-                <button  class="dscButton" onclick="changeDsc(
-                    'B Block',
-                    'images/Bblock.jpg',
-                    'Also known as the engineering block houses all the B Tech departments along with club rooms and companies on the upper floors in addition to the famous 13th Floor.')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">B Block</p>
-                            <br>
-                            <img class="imgColl" src="images/Bblock.jpg">
-                        </center>
-                    </div>
-                </button>
-            </div>
-            <br>
-            <div class="row">
-                <button  class="dscButton" onclick="changeDsc(
-                    'MRD Block',
-                    'images/Fblock.jpg',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">F Block</p>
-                            <br>   
-                            <img class="imgColl" src="images/Fblock.jpg">
-                        </center>
-                    </div>
-                </button>
-                <div style="width:15px"></div>
-                <button  class="dscButton" onclick="changeDsc(
-                    'G Block',
-                    'images/Gblock.jpg',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">G Block</p>
-                            <br>
-                            <img class="imgColl" src="images/Gblock.jpg">
-                        </center>
-                    </div>
-                </button>
-            </div>
-            <br> 
-            <div class="row">
-                <button  class="dscButton" onclick="changeDsc(
-                    'OAT - Open Air Theatre',
-                    'images/oat.jpg',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">OAT</p>
-                            <br>
-                            <img class="imgColl" src="images/oat.jpg">
-                        </center>
-                    </div>
-                </button>
-                <div style="width:15px"></div>
-                <button  class="dscButton" onclick="changeDsc(
-                    'PIr3',
-                    'images/pir3.jpg',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">PIr3</p>
-                            <br>
-                            <img class="imgColl" src="images/pir3.jpg">
-                        </center>
-                    </div>
-                </button>
-            </div>
-
-            <br>
-            <div class="row">
-                <button  class="dscButton" onclick="changeDsc(
-                    'Student Longue',
-                    'images/studentLounge.jpg',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">Student Longue</p>
-                            <br>
-                            <img class="imgColl" src="images/studentLounge.jpg">
-                        </center>
-                    </div>
-                </button>
-                <div style="width:15px"></div>
-                <button  class="dscButton" onclick="changeDsc(
-                    'Add More Places',
-                    'images/default.png',
-                    'Add Your Thoughts and Contribute! #Hacktober')">
-                    <div class="card">
-                        <center>
-                            <p class="collHeader">Add More Places</p>
-                            <br>
-                            <img class="imgColl" src="images/default.png">
-                        </center>
-                    </div>
-                </button>
-            </div>
-        </div>
-
-
-        <div class="dscCard">
-            <div class="dscCross" onclick="closeDsc()"><i class="fas fa-times"></i></div> 
-            <center>
-                <h1 id="dscHeader" >Ring Road Campus</h1>
-                <br>
-                <img src="images/rr.jpg" class="dscImage" id="dscImage">
-                <br><br><br>
-                <p class="content" id="dscText">Address: 100 Feet Ring Road, Banashankari Stage III, Dwaraka Nagar, Banashankari, Bengaluru, Karnataka 560085</p>
-            </center>
-        </div>
-
-    </div>
-
-    <br><br>
-
-
-
-
-
-
-
-    <footer class="footer">
-        
-        <div style="display: flex;flex-direction: row;">
-            <a href="https://www.pes.edu/"  target="_blank"><img src="images/PES logo.png" class="pesLogo"></a>
-            <div style="width:10px"></div>
-            <p class="content">HackerSpace</p>
-        </div>
-        
-        <div class="footerSpace"></div>
-        <a class="footerIcon" href="https://github.com/HackerSpace-PESU" target="_blank" ><i class="fab fa-github"></i></a>
-        <a class="footerIcon" href="https://www.instagram.com/peshackerspace/" target="_blank" ><i class="fab fa-instagram"></i></a>
-        <a class="footerIcon" href="mailto:hackathonclubpes@gmail.com" target="_blank" ><i class="fas fa-at"></i></a> 
-        <a class="footerIcon" href="https://discord.com/invite/zEpxPnP" target="_blank" ><i class="fab fa-discord"></i></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html">
+                <span class="logo">PESU <b class="accent">GUIDE</b></span>
+            </a>
             
-    </footer>
-</body>
+            <ul class="navList">
+                <li class="navItem"><a href="rrCampus.html" class="navLink">RR Campus</a></li>
+                <li class="navItem"><a href="ecCampus.html" class="navLink">EC Campus</a></li>
+                <li class="navItem"><a href="gallery.html" class="navLink">Gallery</a></li>
+            </ul>
+
+        </nav>
+
+
+        <div class="rrBox">
+            <div class="rrColl">
+                <div class="row">
+                    <button  class="dscButton" onclick="changeDsc(
+                        'MRD Block',
+                        'images/mrd.jpg',
+                        'Silver Jubliee Building named after the founder of PES University Mr. M.R.Doreswamy')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">MRD Block</p>
+                                <br>
+                                <img class="imgColl" src="images/mrd.jpg">
+                            </center>
+                        </div>
+                    </button>
+                    <div style="width:15px"></div>
+                    <button  class="dscButton" onclick="changeDsc(
+                        'B Block',
+                        'images/Bblock.jpg',
+                        'Also known as the engineering block houses all the B Tech departments along with club rooms and companies on the upper floors in addition to the famous 13th Floor.')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">B Block</p>
+                                <br>
+                                <img class="imgColl" src="images/Bblock.jpg">
+                            </center>
+                        </div>
+                    </button>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <button  class="dscButton" onclick="changeDsc(
+                        'MRD Block',
+                        'images/Fblock.jpg',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">F Block</p>
+                                <br>   
+                                <img class="imgColl" src="images/Fblock.jpg">
+                            </center>
+                        </div>
+                    </button>
+                    <div style="width:15px"></div>
+                    <button  class="dscButton" onclick="changeDsc(
+                        'G Block',
+                        'images/Gblock.jpg',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">G Block</p>
+                                <br>
+                                <img class="imgColl" src="images/Gblock.jpg">
+                            </center>
+                        </div>
+                    </button>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <button  class="dscButton" onclick="changeDsc(
+                        'OAT - Open Air Theatre',
+                        'images/oat.jpg',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">OAT</p>
+                                <br>
+                                <img class="imgColl" src="images/oat.jpg">
+                            </center>
+                        </div>
+                    </button>
+                    <div style="width:15px"></div>
+                    <button  class="dscButton" onclick="changeDsc(
+                        'PIr3',
+                        'images/pir3.jpg',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">PIr3</p>
+                                <br>
+                                <img class="imgColl" src="images/pir3.jpg">
+                            </center>
+                        </div>
+                    </button>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <button  class="dscButton" onclick="changeDsc(
+                        'Student Longue',
+                        'images/studentLounge.jpg',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">Student Longue</p>
+                                <br>
+                                <img class="imgColl" src="images/studentLounge.jpg">
+                            </center>
+                        </div>
+                    </button>
+                    <div style="width:15px"></div>
+                    <button  class="dscButton" onclick="changeDsc(
+                        'Add More Places',
+                        'images/default.png',
+                        'Add Your Thoughts and Contribute! #Hacktoberfest')">
+                        <div class="card">
+                            <center>
+                                <p class="collHeader">Add More Places</p>
+                                <br>
+                                <img class="imgColl" src="images/default.png">
+                            </center>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="dscCard">
+                <div class="dscCross" onclick="closeDsc()"><i class="fas fa-times"></i></div> 
+                <center>
+                    <h1 id="dscHeader" >Ring Road Campus</h1>
+                    <br>
+                    <img src="images/rr.jpg" class="dscImage" id="dscImage">
+                    <br><br><br>
+                    <p class="content" id="dscText">Address: 100 Feet Ring Road, Banashankari Stage III, Dwaraka Nagar, Banashankari, Bengaluru, Karnataka 560085</p>
+                </center>
+            </div>
+
+        </div>
+
+
+        <br><br>
+
+        <footer class="footer">
+        
+            <div style="display: flex;flex-direction: row;">
+                <a href="https://www.pes.edu/"  target="_blank"><img src="images/PES logo.png" class="pesLogo"></a>
+                <div style="width:10px"></div>
+                <p class="content">HackerSpace</p>
+            </div>
+        
+            <div class="footerSpace"></div>
+            <a class="footerIcon" href="https://github.com/HackerSpace-PESU" target="_blank" ><i class="fab fa-github"></i></a>
+            <a class="footerIcon" href="https://www.instagram.com/peshackerspace/" target="_blank" ><i class="fab fa-instagram"></i></a>
+            <a class="footerIcon" href="mailto:hackathonclubpes@gmail.com" target="_blank" ><i class="fas fa-at"></i></a> 
+            <a class="footerIcon" href="https://discord.com/invite/zEpxPnP" target="_blank" ><i class="fab fa-discord"></i></a>
+            
+        </footer>
+
+    </body>
 </html>
