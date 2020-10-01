@@ -200,6 +200,10 @@ body{
     outline-color: #2eb82e;
 }
 
+.dscCross{
+    display: none;
+}
+
 @media (max-width: 952px){
     .logo{
         font-size: 30px;
@@ -285,8 +289,12 @@ body{
     .footer{ 
         padding: 30px 0px 30px 0px;
     }
+    .rrBox{
+        justify-content: center;
+    }
     .rrColl{
-        padding: 10px 10px 10px 30px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
         
     }
     .imgColl{
@@ -301,10 +309,12 @@ body{
     }
     .dscCard{
         position: fixed;
+        
         width:100%;
         right:100%;
-        padding: 8%;
-        background-color: rgb(217, 217, 217,0.80);
+        padding: 5%;
+        border-radius: 8%;
+        background-color: rgb(217, 217, 217,0.85);
 
     }
     .dscCard.active{
@@ -313,5 +323,10 @@ body{
     .collHeader{
         font-size: 15px;
         font-weight: 600;
+    }
+    .dscCross{
+        display: block;
+        font-size: 20px;
+        float: right;
     }
 }

@@ -6,3 +6,7 @@ function changeDsc(header,scr,text){
     document.getElementsByClassName("dscCard")[0].classList.toggle('active');
     document.documentElement.scrollTop = 0;
 }
+
+function closeDsc(){
+    document.getElementsByClassName("dscCard")[0].classList.toggle('active');
+}
