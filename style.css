@@ -1,15 +1,20 @@
+
 /* Custom Fonts  */
+
+/* Primary Font */
 @font-face{
     src:url('./fonts/Lato-Regular.ttf');
     font-family: lato;
 }   
 
+/* Secondary Font */
 @font-face{
     
     src:url('./fonts/Ubuntu-Regular.ttf');
     font-family: dalton;
 }
 
+/* Basic styling to be followed by the entire website */
 *{
     padding: 0;
     margin: 0;
@@ -18,13 +23,16 @@
     box-sizing: border-box;
 }
 
+/* GUIDE color */
 .accent{
     color:#2eb82e;
 }
 
+/* HackerSpace color in the home page */
 .hackerSpace{
     color:#7330ed;
 }
+
 
 body{
     font-family: lato,dalton;
@@ -71,6 +79,7 @@ body{
     transition: .5s;
 }
 
+/* Used for the ham burger icon  */
 .checkbtn{
     font-size: 30px;
     color: black;
@@ -81,9 +90,11 @@ body{
     display: none;
 }
 
+/* Used for the ham burger icon  */
 #check{
-    display: none;
+    display: none;    
 }
+
 
 .home{
     padding: 50px 40px 0px 40px;
@@ -101,19 +112,19 @@ body{
     font-size: 20px;
 }
 
-.card {
-    /* Add shadows to create the "card" effect */
+/* Custom card with shadown */
+.card{
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 3%;
 }
   
-/* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* Initial image in the hope page */
 .homeImage{
     height:500px;
 }
@@ -131,10 +142,12 @@ body{
     padding: 30px;
 }
 
+/* PES logo in the footer */
 .pesLogo{
     height: 25px;
 }
 
+/* Social Icons in the footer */
 .footerIcon{
     font-size: 30px;
     color: white;
@@ -155,17 +168,21 @@ body{
     flex-direction: row;
     padding-top: 10px;
 }
+
+/* Headers for the Collection */
 .collHeader{
     font-size: 25px;
     font-weight: 600;
 }
 
+/* Collection Flex box */
 .rrColl{
     display: flex;
     flex-direction: column;
     padding:20px;
 }
 
+/* image used in the collection card */
 .imgColl{
     height:300px;
     width:500px;
@@ -176,14 +193,17 @@ body{
     flex-direction: row;
 }
 
+/* image used in the description card */
 .dscImage{
     height: 190px;
 }
 
+/* map image used in the description card */
 .dscMap{
     height:400px;
 }
 
+/* Custom description card */
 .dscCard {
     padding: 10px;
     border-radius: 8% 0 0 8% ; 
@@ -195,6 +215,7 @@ body{
 }
 
 
+/* Button that wraps around the collection card  */
 .dscButton{
     border: none;
 }
@@ -204,9 +225,12 @@ body{
     outline-color: #2eb82e;
 }
 
+/* close icon in the description crad */
 .dscCross{
     display: none;
 }
+
+/* Media Quaries for smooth transition */
 
 @media (max-width: 952px){
     .logo{
@@ -229,6 +253,9 @@ body{
         height:200px;
     }
  }
+
+/* Media Quaries for Mobile View */
+
 @media (max-width: 858px){
     .checkbtn{
         display: block;
@@ -334,6 +361,8 @@ body{
         float: right;
     }
 }
+
+/* Hover effects for Socials found in the footer  */
 
 #github:hover{
     color:rgb(53, 48, 48);

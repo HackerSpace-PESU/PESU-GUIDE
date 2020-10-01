@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link for the CSS file -->
         <link rel="stylesheet" href="style.css">
+        <!-- link for the JavaScript file -->
         <script type="text/javascript" src="script.js"></script>
+        <!-- CDN for fontawesome library  -->
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <link rel="icon" href="images/icon.jpg">
+         <!-- Icon present inside the tab along with the title -->
+        <link rel="icon" href="images/icon.png">
+
         <title>Something</title>
+
     </head>
     <body>
+
+         <!-- The navigation bar parent class implemented using flexbox  -->
         <nav class="navBar">
 
+            <!-- This is for the hamburger menu which can be viewed while using the website on your phones -->
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="index.html">
-                <span class="logo">PESU <b class="accent">GUIDE</b></span>
-            </a>
-            
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+
+            <!-- The PESU GUIDE logo -->
+            <a href="index.html"><span class="logo">PESU <b class="accent">GUIDE</b></span></a>
+        
+            <!-- The items present in the navigation bar along with their links -->
             <ul class="navList">
                 <li class="navItem"><a href="rrCampus.html" class="navLink">RR Campus</a></li>
                 <li class="navItem"><a href="ecCampus.html" class="navLink">EC Campus</a></li>
@@ -28,23 +37,44 @@
 
         </nav>
 
+
+        <!-- Now its your turn, try to think of something that can help a first year student or anybody new to pes university and  -->
+        <!-- on how you can help them by giving them this site with the content that you provide. Good Luck! -->
+
+        <!-- P.S. I ran out of ideas so I simply put the following image :) -->
         <center><br><br><img src="images/iwasjobless.jpg" style="height:300px"><br><br></center>
 
+        <!-- Footer of the Webpage -->
         <footer class="footer">
         
-            <div style="display: flex;flex-direction: row;">
-                <a href="https://www.pes.edu/"  target="_blank"><img src="images/PES logo.png" class="pesLogo"></a>
+            <!-- Row flexbox -->
+            <div class="row">
+
+                <!-- PES logo and weblink-->
+                <a href="https://www.pes.edu/" target="_blank"><img src="images/PES logo.png" class="pesLogo"></a>
+                <!-- Space using CSS -->
                 <div style="width:10px"></div>
+                <!-- HackerSpace Text -->
                 <p class="content">HackerSpace</p>
+
             </div>
         
+            <!-- Space Between Logos and socials -->
             <div class="footerSpace"></div>
+
+            <!-- Social links -->
+
+            <!-- Github link of HackerSpace -->
             <div id="github"><a class="footerIcon" href="https://github.com/HackerSpace-PESU" target="_blank" ><i id="github" class="fab fa-github"></i></a></div>
+            <!-- Instagram link of HackerSpace -->
             <div id="instagram"> <a  class="footerIcon" href="https://www.instagram.com/peshackerspace/" target="_blank" ><i id="instagram" class="fab fa-instagram"></i></a></div>
+            <!-- Email address of HackerSpace -->
             <div id="mail"> <a class="footerIcon" href="mailto:hackathonclubpes@gmail.com" target="_blank" ><i id="mail" class="fas fa-at"></i></a> </div>
+            <!-- Discord Link of HackerSpace -->
             <div id="discord"> <a class="footerIcon" href="https://discord.com/invite/zEpxPnP" target="_blank" ><i id="discord" class="fab fa-discord"></i></a></div>
             
         </footer>
 
     </body>
+    
 </html>
