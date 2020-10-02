@@ -6,8 +6,8 @@ It was created using HTML,CSS and JS so as to make it possible for anyone to con
 
 ### To view the site: [PESU GUIDE](https://dan-329.github.io/PESU-GUIDE/)
 
-![](doc/p1.JPG)
+![](doc/Hacktoberfest2020.jpg)
 
-![](doc/p1.JPG)
+![](doc/hackerspace.png)
 
 
