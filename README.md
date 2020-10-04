@@ -4,7 +4,7 @@ The PESU GUIDE is a website that provides information about the various places a
 
 It was created using HTML,CSS and JS so as to make it possible for anyone to contribute to. 
 
-### To view the site: [PESU GUIDE](https://dan-329.github.io/PESU-GUIDE/src/index.html)
+### To view the site: [PESU GUIDE](https://hackerspace-pesu.github.io/src/index.html)
 
 
 <img src="doc/images/hackerspace.png">
