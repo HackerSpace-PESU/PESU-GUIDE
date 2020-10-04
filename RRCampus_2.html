@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link for the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="RRcampus.css" />
+    <!-- link for the JavaScript file -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- CDN for fontawesome library  -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Icon present inside the tab along with the title -->
+    <link rel="icon" href="images/icon.png" />
+
+    <title>RR Campus</title>
+  </head>
+  <body>
+    <nav class="navBar">
+      <!-- This is for the hamburger menu which can be viewed while using the website on your phones -->
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+
+      <!-- The PESU GUIDE logo -->
+      <a href="index.html"
+        ><span class="logo">PESU <b class="accent">GUIDE</b></span></a
+      >
+
+      <!-- The items present in the navigation bar along with their links -->
+      <ul class="navList">
+        <li class="navItem">
+          <a href="rrCampus.html" class="navLink">RR Campus</a>
+        </li>
+        <li class="navItem">
+          <a href="ecCampus.html" class="navLink">EC Campus</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main_container">
+      <div class="container">
+        <div class="imgCard">
+          <h3 class="PlaceName">B Block</h3>
+          <img class="image" src="images/Bblock.jpg" alt="" onclick="sidepanel(`images/Bblock.jpg`, `B Block` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">F Block</h3>
+          <img class="image" src="images/Fblock.jpg" alt="" onclick="sidepanel(`images/Fblock.jpg`, `F Block` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">G Block</h3>
+          <img class="image" src="images/Gblock.jpg" alt="" onclick="sidepanel(`images/Gblock.jpg`, `G Block` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">MRD Block</h3>
+          <img class="image" src="images/mrd.jpg" alt="" onclick="sidepanel(`images/mrd.jpg`, `MRD Block` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">OAT</h3>
+          <img class="image" src="images/oat.jpg" alt="" onclick="sidepanel(`images/oat.jpg`, `OAT` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">Pie R cube</h3>
+          <img class="image" src="images/pir3.jpg" alt="" onclick="sidepanel(`images/pir3.jpg`, `Pie R Cube` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">Student Lounge</h3>
+          <img class="image" src="images/studentLounge.jpg" alt="" onclick="sidepanel(`images/studentLounge.jpg`, `Student Lounge` , `Description`)" />
+        </div>
+        <div class="imgCard">
+          <h3 class="PlaceName">Add More Places</h3>
+          <img class="image" src="images/default.png" alt="" onclick="sidepanel(`images/default.png`, `Add More Places` , `Description`)" />
+        </div>
+      </div>
+      <div class="sidepanel">
+        <h3 class="PlaceName" id="sidepanelplace"></h3>
+        <img src="" id="sidepanelimg">
+        <h5 id="sidepaneldes" class="Description"></h5>
+      </div>
+    </div>
+
+    <!-- Footer of the Webpage -->
+    <footer class="footer">
+      <!-- Row flexbox -->
+      <div class="row">
+        <!-- PES logo and weblink-->
+        <a href="https://www.pes.edu/" target="_blank"
+          ><img src="images/PES logo.png" class="pesLogo"
+        /></a>
+        <!-- Space using CSS -->
+        <div style="width: 10px"></div>
+        <!-- HackerSpace Text -->
+        <p class="content">HackerSpace</p>
+      </div>
+
+      <!-- Space Between Logos and socials -->
+      <div class="footerSpace"></div>
+
+      <!-- Social links -->
+
+      <!-- Github link of HackerSpace -->
+      <div id="github">
+        <a
+          class="footerIcon"
+          href="https://github.com/HackerSpace-PESU"
+          target="_blank"
+          ><i id="github" class="fab fa-github"></i
+        ></a>
+      </div>
+      <!-- Instagram link of HackerSpace -->
+      <div id="instagram">
+        <a
+          class="footerIcon"
+          href="https://www.instagram.com/peshackerspace/"
+          target="_blank"
+          ><i id="instagram" class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <!-- Email address of HackerSpace -->
+      <div id="mail">
+        <a
+          class="footerIcon"
+          href="mailto:hackathonclubpes@gmail.com"
+          target="_blank"
+          ><i id="mail" class="fas fa-at"></i
+        ></a>
+      </div>
+      <!-- Discord Link of HackerSpace -->
+      <div id="discord">
+        <a
+          class="footerIcon"
+          href="https://discord.com/invite/zEpxPnP"
+          target="_blank"
+          ><i id="discord" class="fab fa-discord"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

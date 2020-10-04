@@ -21,6 +21,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* GUIDE color */
@@ -158,6 +159,8 @@ body{
     flex-direction: row;
     align-content: space-around; 
     padding: 30px;
+    bottom:0;
+    position: relative;
 }
 
 /* PES logo in the footer */
