@@ -7,6 +7,6 @@ It was created using HTML,CSS and JS so as to make it possible for anyone to con
 ### To view the site: [PESU GUIDE](https://dan-329.github.io/PESU-GUIDE/)
 
 
-<img src="doc/hackerspace.png">
+<img src="doc/images/hackerspace.png">
 
 
