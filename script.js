@@ -21,3 +21,14 @@ function changeDsc(header,scr,map,text){
 function closeDsc(){
     document.getElementsByClassName("dscCard")[0].classList.toggle('active');
 }
+
+function sidepanel(imglink , placename, description){
+    img = document.getElementById("sidepanelimg");
+    img.src=imglink;
+    place = document.getElementById("sidepanelplace");
+    place.innerHTML = placename;
+    des = document.getElementById("sidepaneldes");
+    des.innerHTML = description;
+    document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

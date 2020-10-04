@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+}
+
+.main_container{
+    display:flex;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.PlaceName{
+    line-height: 4vh;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.imgCard{
+    max-height: 35vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.sidepanel{
+    background-color:  #d9d9d9;
+}
+
+.image{
+    max-height: 30vh;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+img{
+    max-height: 35vh;
+    margin: 2vh;
+}
+
+.Description{
+    text-align: center;
+    padding: 5px;
+}
